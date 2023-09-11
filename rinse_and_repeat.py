@@ -1,19 +1,19 @@
 
 
-frase = input("escolha uma frase para ser repetida")
-numero = int(input("quantas vezes você deseja que essa frase seja repetida?"))
+inputtext = input("digite algo para ser repetido")
+number = int(input("quantas vezes você deseja que essa frase seja repetida?"))
 
 
-def repetir (texto, numero_de_vezes):
-    contador = 0
-    while numero_de_vezes > contador:
-        print(texto)
-        contador += 1
+def repetir (text, xtimes):
+    i = 0
+    while xtimes > i:
+        print(text)
+        i += 1
 
 
-repetir(frase, numero)
+repetir(inputtext, number)
 
-print("fim")
+print("end")
 
 
 
