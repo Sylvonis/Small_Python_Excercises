@@ -1,2 +1,3 @@
-# teste-versionamento
-testando versionamento e como voltar para versões antigas de um código simples de poucas linhas; refatorando o codigo
+# Testes de programas para estudo
+
+Fazendo pequenos programas com Python e adicionando aqui
