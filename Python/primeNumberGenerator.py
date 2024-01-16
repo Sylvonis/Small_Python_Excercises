@@ -3,53 +3,29 @@ write a generator capable of generating the sequence of prime numbers
 """
 
 
-g = [x for x in range(10)]
+def primeNumberGenerator(max_range):
+    i = 2
+    while i < max_range:
+        isprime = True
+        for x in range(2, i):
+            if i % x == 0:
+                isprime = False
+
+        if isprime is True:
+            print(f"{i} is a prime number!")
+            yield i
+        i += 1
 
 
-def isPrime(number):
-    isprime = True
-
-    if number == 0:
-        print("Zero is not a prime number")
-        return False
-    if number == 1:
-        print("One is not a prime number")
-        return False
-    if number < 0:
-        print("A negative number can not be prime number")
-        return False
-
-    for x in range(2, number):
-        if number % x == 0:
-            isprime = False
-
-    if isprime is False:
-        print(f"{number} is not a prime number")
-        return False
-    elif isprime is True:
-        print(f"{number} is a prime number!")
-        return True
+g = primeNumberGenerator(1000)  # save all the first 1000 first prime numbers
 
 
-# def givePrimeNum(choosen_range):
-#     for number in range(choosen_range):
+try:
+    [next(g) for number in range(1000)]  # show the first 1000, if more than the saved, nothing happens because of try
 
-
-
-# for each number in the sequence, divide it by all values before .index(number)
-
-
-
-
-
-
-
-
-
-
-
-
-
+except StopIteration:
+    print('end')
+    pass
 
 
 
