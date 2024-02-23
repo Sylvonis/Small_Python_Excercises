@@ -1,0 +1,7 @@
+Uma linha normal
+;Esta linha não deve ser impressa.
+>Esta linha deve ser impressa alinhada a direita
+*Esta Linha deve ser centralizada
+=Esta linha imprime 40 vezes
+.Aqui o Programa para até você apertar ENTER
+Outra linha normal
